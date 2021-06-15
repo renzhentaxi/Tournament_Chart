@@ -48,6 +48,7 @@ CHART_TITLE = config['title']
 DECK_INFOS = config['decks']
 PIE_OUTLINE_COLOR = config.get('pie_outline_color') or 'black'
 BACKGROUND = config.get('background') or ''
+ZOOM_LEVEL = config.get('zoom_level') or .72
 
 # computing/formating data/labels
 def compute_data(deck_infos):
@@ -86,11 +87,10 @@ def img_to_pie( image, wedge, xy, zoom=1, ax = None):
     ax.add_artist(ab)
 
 
-zoom_level = 1
 
 for i in range(len(total)):
     image = get_image(pictures[i])
-    img_to_pie(image, wedges[i], xy=(0,0), zoom=zoom_level)
+    img_to_pie(image, wedges[i], xy=(0,0), zoom=ZOOM_LEVEL)
     wedges[i].set_zorder(10)
 
 plt.savefig('pie.png', bbox_inches='tight')

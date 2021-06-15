@@ -1,6 +1,7 @@
 {
     "title": "Doornament breakdown",
     "pie_outline_color": "black",
+    "zoom_level": 0.75,
     "decks": {
         "Lava burn": {
             "count": 1,
