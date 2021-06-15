@@ -1,0 +1,18 @@
+{
+    "title": "Doornament breakdown",
+    "pie_outline_color": "black",
+    "decks": {
+        "Lava burn": {
+            "count": 1,
+            "card": "lava golem"
+        },
+        "Photon best deck": {
+            "count": 5,
+            "card": "photon crusher"
+        },
+        "Nobleknight": {
+            "count": 1,
+            "card": "Noble Knight"
+        }
+    }
+}
